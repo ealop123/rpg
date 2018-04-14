@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Just a link</title>
-    <style>
-      header {
-        width: 300px;
-        line-height: 100px;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: lightgrey;
-        border-radius: 25px;
-        text-align: center;
-       }
-      header a {
-        color: black;
-        text-decoration: none;
-      }
-      header a:hover {
-        color: grey
-      }
-    </style>
-  </head>
-  <body>
-    <header><a href="rpg.html"><h1>Here it is</h1></a></header>
-  </body>
+	<head>
+		<title>RPG testing</title>
+		
+		<link rel="stylesheet" type="text/css" href="rpg.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="rpg.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>My RPG test</h1>
+				<p>By Ezekiel Lopez</p>
+			</header>
+			<div id="screenContainer">
+				<h1 id="_1_title" class="titleText">Welcome to my RPG</h1>
+				<style>
+					#screenContainer {
+						background-image: url("orc-woman.png"), url("dragon.png");
+						background-position: -200px 0, right bottom;
+						background-size: auto, 450px auto;
+						background-repeat: no-repeat, no-repeat;
+					}
+				</style>
+				<input type="button" id="_1_new" value="New Game">
+				<input type="button" id="_1_load" value="Load Game">
+			</div>
+			
+			<div style="display: none;" id="_2_new">
+				<h1 id="_2_title" class="titleText">Select a Race</h1>
+				<div id="_2_human" class="_2_raceIcon">
+				</div>
+				<div id="_2_halfelf" class="_2_raceIcon">
+				</div>
+				<div id="_2_elf" class="_2_raceIcon">
+				</div>
+				<div id="_2_dwarf" class="_2_raceIcon">
+				</div>
+				<div id="_2_halforc" class="_2_raceIcon">
+				</div>
+				<div id="_2_tifling" class="_2_raceIcon">
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
