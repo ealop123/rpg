@@ -1,0 +1,85 @@
+body {
+	background-color: lightblue;
+}
+
+header {
+	text-align: center;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+header p {
+	margin-top: 0;
+}
+#wrapper {
+	margin-top: 3vmin;
+	width: 800px;
+	height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	box-shadow: 5px 5px 5px grey;
+}
+#screenContainer {
+	height: 400px;
+	width: 700px;
+	border: 1px solid black;
+	margin: auto;
+	background-color: rgba(0, 0, 0, .9);
+	position: relative;
+	border-radius: 5px;
+	color: lightgrey;
+}
+:root {
+	/* Button placement Variables */
+	--xAxis: 119px;
+	--yAxis: 80px;
+}
+#_1_title {
+	text-align: center;
+	color: rgba(360, 360, 360, .9);
+	text-shadow: 1px 1px 1px grey;
+	background-color: rgba(100, 100, 100, .7);
+	width: 350px;
+	line-height: 50px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#_1_new {
+	position: absolute;
+	bottom: var(--yAxis);
+	left: var(--xAxis);
+}
+#_1_load {
+	position: absolute;
+	bottom: var(--yAxis);
+	right: var(--xAxis);
+}
+#_1_load, #_1_new {
+	width: 150px;
+	height: 50px;
+	background-color: grey;
+	border-color: lightgrey;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: helvetica;
+	text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.99);
+	border-radius: 5px;
+}
+#_1_load:hover, #_1_new:hover {
+	color: white;
+	text-shadow: 0 0 0.1px rgba(360, 360, 360, 0.99);
+}
+#_2_title {
+	text-align: center;
+	color: rgba(360, 360, 360, .9);
+	text-shadow: 1px 1px 1px grey;
+	background-color: rgba(100, 100, 100, .7);
+	width: 350px;
+	line-height: 50px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}

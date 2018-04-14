@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RPG testing</title>
+		
+		<link rel="stylesheet" type="text/css" href="rpg.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="rpg.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>My RPG test</h1>
+				<p>By Ezekiel Lopez</p>
+			</header>
+			<div id="screenContainer">
+				<h1 id="_1_title">Welcome to my RPG</h1>
+				<style>
+					#screenContainer {
+						background-image: url("orc-woman.png"), url("dragon.png");
+						background-position: -200px 0, right bottom;
+						background-size: auto, 450px auto;
+						background-repeat: no-repeat, no-repeat;
+					}
+				</style>
+				<input type="button" id="_1_new" value="New Game">
+				<input type="button" id="_1_load" value="Load Game">
+			</div>
+			
+			<div style="display: none;" id="_2_new">
+				<h1 id="_2_title">Hello there</h1>
+				<p>You will soon find yourself in a dangerous new world. Think long and hard, who are you?</p>
+			</div>
+		</div>
+	</body>
+</html>
